@@ -1,0 +1,11 @@
+F:\C#\Talabat\Talabat.Core\bin\Debug\net6.0\Talabat.Core.deps.json
+F:\C#\Talabat\Talabat.Core\bin\Debug\net6.0\Talabat.Core.dll
+F:\C#\Talabat\Talabat.Core\bin\Debug\net6.0\Talabat.Core.pdb
+F:\C#\Talabat\Talabat.Core\obj\Debug\net6.0\Talabat.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\C#\Talabat\Talabat.Core\obj\Debug\net6.0\Talabat.Core.AssemblyInfoInputs.cache
+F:\C#\Talabat\Talabat.Core\obj\Debug\net6.0\Talabat.Core.AssemblyInfo.cs
+F:\C#\Talabat\Talabat.Core\obj\Debug\net6.0\Talabat.Core.csproj.CoreCompileInputs.cache
+F:\C#\Talabat\Talabat.Core\obj\Debug\net6.0\Talabat.Core.dll
+F:\C#\Talabat\Talabat.Core\obj\Debug\net6.0\refint\Talabat.Core.dll
+F:\C#\Talabat\Talabat.Core\obj\Debug\net6.0\Talabat.Core.pdb
+F:\C#\Talabat\Talabat.Core\obj\Debug\net6.0\ref\Talabat.Core.dll

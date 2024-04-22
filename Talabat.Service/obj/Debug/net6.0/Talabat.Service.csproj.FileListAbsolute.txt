@@ -1,0 +1,11 @@
+F:\C#\Talabat\Talabat.Service\bin\Debug\net6.0\Talabat.Service.deps.json
+F:\C#\Talabat\Talabat.Service\bin\Debug\net6.0\Talabat.Service.dll
+F:\C#\Talabat\Talabat.Service\bin\Debug\net6.0\Talabat.Service.pdb
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.AssemblyInfoInputs.cache
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.AssemblyInfo.cs
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.csproj.CoreCompileInputs.cache
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.dll
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\refint\Talabat.Service.dll
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.pdb
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\ref\Talabat.Service.dll
