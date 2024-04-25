@@ -32,7 +32,7 @@ namespace Talabat
 			});
 
 			// Add All Custom Service From Extention Method
-			builder.Services.AddCustomService();
+			builder.Services.AddCustomService(builder);
 
 			var app = builder.Build();
 			//Add Migrate From Code 

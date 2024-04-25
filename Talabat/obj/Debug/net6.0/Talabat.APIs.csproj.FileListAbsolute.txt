@@ -54,7 +54,6 @@ F:\C#\Talabat\Talabat\obj\Debug\net6.0\Talabat.APIs.GeneratedMSBuildEditorConfig
 F:\C#\Talabat\Talabat\obj\Debug\net6.0\Talabat.APIs.AssemblyInfoInputs.cache
 F:\C#\Talabat\Talabat\obj\Debug\net6.0\Talabat.APIs.AssemblyInfo.cs
 F:\C#\Talabat\Talabat\obj\Debug\net6.0\Talabat.APIs.csproj.CoreCompileInputs.cache
-F:\C#\Talabat\Talabat\obj\Debug\net6.0\Talabat.APIs.MvcApplicationPartsAssemblyInfo.cs
 F:\C#\Talabat\Talabat\obj\Debug\net6.0\Talabat.APIs.MvcApplicationPartsAssemblyInfo.cache
 F:\C#\Talabat\Talabat\obj\Debug\net6.0\staticwebassets.build.json
 F:\C#\Talabat\Talabat\obj\Debug\net6.0\staticwebassets.development.json
@@ -73,3 +72,7 @@ F:\C#\Talabat\Talabat\obj\Debug\net6.0\ref\Talabat.APIs.dll
 F:\C#\Talabat\Talabat\bin\Debug\net6.0\AutoMapper.dll
 F:\C#\Talabat\Talabat\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 F:\C#\Talabat\Talabat\bin\Debug\net6.0\Talabat.APIs.staticwebassets.runtime.json
+F:\C#\Talabat\Talabat\obj\Debug\net6.0\Talabat.APIs.sourcelink.json
+F:\C#\Talabat\Talabat\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+F:\C#\Talabat\Talabat\bin\Debug\net6.0\StackExchange.Redis.dll
+F:\C#\Talabat\Talabat\obj\Debug\net6.0\Talabat.APIs.MvcApplicationPartsAssemblyInfo.cs

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StackExchange.Redis;
 using System.Reflection;
 using Talabat.APIs.Errors;
 using Talabat.APIs.Mapping;
@@ -10,11 +11,12 @@ namespace Talabat.APIs.Extensions
 {
 	public static class ApplicationServiceExtension
 	{
-		public static IServiceCollection AddCustomService(this IServiceCollection Services)
+		public static IServiceCollection AddCustomService(this IServiceCollection Services, WebApplicationBuilder builder)
 		{
 			
 			//Add Repositories Injection
 			Services.AddScoped(typeof(IGenericRepositories<>), typeof(GenericRepositories<>));
+			Services.AddSingleton<ICartRepository, CartRepository>();
 
 			//Add AutoMapper
 			Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));
@@ -35,6 +37,13 @@ namespace Talabat.APIs.Extensions
 					return new BadRequestObjectResult(validationResponseError);
 				};
 			});
+
+			//Add Redis
+			Services.AddSingleton<IConnectionMultiplexer>((serviceProvider) =>
+			{
+				var connection = builder.Configuration.GetConnectionString("Redis");
+				return ConnectionMultiplexer.Connect(connection);
+			});		
 			return Services;
 		}
 	}

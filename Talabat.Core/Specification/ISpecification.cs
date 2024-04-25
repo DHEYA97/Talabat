@@ -14,6 +14,9 @@ namespace Talabat.Core.Specification
 		public List<Expression<Func<T, object>>> Includes { get; set; }
 		public Expression<Func<T, object>> OrderByAsc { get; set; }
 		public Expression<Func<T, object>> OrderByDes { get; set; }
+		public int? Skip {  get; set; }
+		public int? Take { get; set; }
+		public bool IsEnablePageSize {  get; set; }
 
 	}
 }

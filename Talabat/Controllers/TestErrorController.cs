@@ -4,6 +4,7 @@ using Talabat.APIs.Errors;
 using Talabat.Core.Models;
 using Talabat.Core.Repositories.Interfaces;
 using Talabat.Core.Specification.EntitySpecification;
+using Talabat.Core.Specification.EntitySpecification.product;
 
 namespace Talabat.APIs.Controllers
 {

@@ -19,6 +19,10 @@ namespace Talabat.Repository.Repositories
 		{
 			_context = context;
 		}
+		private IQueryable<T> ApplaySpecification(ISpecification<T> specification)
+		{
+			return  SpecificationEvaluator<T>.GetQuery(_context.Set<T>(), specification);
+		}
 		public async Task<IEnumerable<T?>> GetAllAsync()
 		{
 			return await _context.Set<T>().ToListAsync();
@@ -29,11 +33,15 @@ namespace Talabat.Repository.Repositories
 		}
 		public async Task<IEnumerable<T?>> GetAllWithSpecificationAsync(ISpecification<T> specification)
 		{
-			return await SpecificationEvaluator<T>.GetQuery(_context.Set<T>(),specification).ToListAsync();
+			return await ApplaySpecification(specification).ToListAsync();
 		}
 		public async Task<T?> GetByIdWithSpecificationAsync(ISpecification<T> specification)
 		{
-			return await SpecificationEvaluator<T>.GetQuery(_context.Set<T>(), specification).FirstOrDefaultAsync();
+			return await ApplaySpecification(specification).FirstOrDefaultAsync();
+		}
+		public async Task<int> GetCountAsync(ISpecification<T> specification)
+		{
+			return await ApplaySpecification(specification).CountAsync();
 		}
 	}
 }

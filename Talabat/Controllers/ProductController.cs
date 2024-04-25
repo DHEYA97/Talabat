@@ -3,10 +3,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Talabat.APIs.Dtos;
 using Talabat.APIs.Errors;
+using Talabat.APIs.Hellper;
 using Talabat.Core.Models;
 using Talabat.Core.Repositories.Interfaces;
 using Talabat.Core.Specification;
 using Talabat.Core.Specification.EntitySpecification;
+using Talabat.Core.Specification.EntitySpecification.product;
 
 namespace Talabat.APIs.Controllers
 {
@@ -24,13 +26,15 @@ namespace Talabat.APIs.Controllers
 			_mapper = mapper;
 		}
 
-		[ProducesResponseType(typeof(IEnumerable<ProductDTOs>),StatusCodes.Status200OK)]
+		[ProducesResponseType(typeof(Pagenation<ProductDTOs>),StatusCodes.Status200OK)]
 		[HttpGet]
-		public async Task<ActionResult<IEnumerable<ProductDTOs>>> GetProduct([FromQuery]string? sort)
+		public async Task<ActionResult<Pagenation<ProductDTOs>>> GetProduct([FromQuery] ProductSpicificationParams prodSpicParams)
 		{
-			var product = await _ProductRepositories.GetAllWithSpecificationAsync(new ProductSpecification(sort));
-			var productDto = _mapper.Map<IEnumerable<ProductDTOs>>(product);
-			return Ok(productDto);
+			var productSpecification = new ProductSpecification(prodSpicParams);
+			var product = await _ProductRepositories.GetAllWithSpecificationAsync(productSpecification);
+			var productDto = _mapper.Map<IReadOnlyList<ProductDTOs>>(product);
+			int count = await _ProductRepositories.GetCountAsync(new ProductWithFilterCountsSpisification(prodSpicParams));
+			return Ok(new Pagenation<ProductDTOs>(prodSpicParams.PageSize, prodSpicParams.PageIndex, count, productDto));
 		}
 
 		[ProducesResponseType(typeof(ProductDTOs), StatusCodes.Status200OK)]
