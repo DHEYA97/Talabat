@@ -1,5 +1,57 @@
 [
   {
+    "ContainingType": "Talabat.APIs.Controllers.AccountController",
+    "Method": "SingIn",
+    "RelativePath": "api/Account/SingIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LogInDto",
+        "Type": "Talabat.APIs.Dtos.LogInDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Talabat.APIs.Dtos.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Talabat.APIs.Controllers.AccountController",
+    "Method": "SingUp",
+    "RelativePath": "api/Account/SingUp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "Talabat.APIs.Dtos.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Talabat.APIs.Dtos.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Talabat.APIs.Controllers.CartController",
     "Method": "GetCart",
     "RelativePath": "api/Cart",
@@ -15,7 +67,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Talabat.Core.Models.CustomerCart",
+        "Type": "Talabat.APIs.Hellper.ApiResponse\u00601[[Talabat.Core.Models.CustomerCart, Talabat.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -76,7 +128,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Microsoft.AspNetCore.Mvc.OkObjectResult",
+        "Type": "Talabat.APIs.Hellper.ApiResponse\u00601[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

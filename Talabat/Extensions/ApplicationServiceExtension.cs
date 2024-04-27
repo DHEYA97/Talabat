@@ -4,8 +4,10 @@ using System.Reflection;
 using Talabat.APIs.Errors;
 using Talabat.APIs.Mapping;
 using Talabat.Core.Repositories.Interfaces;
+using Talabat.Core.Service.Interfaces;
 using Talabat.Repository.Data;
 using Talabat.Repository.Repositories;
+using Talabat.Service;
 
 namespace Talabat.APIs.Extensions
 {
@@ -17,6 +19,7 @@ namespace Talabat.APIs.Extensions
 			//Add Repositories Injection
 			Services.AddScoped(typeof(IGenericRepositories<>), typeof(GenericRepositories<>));
 			Services.AddSingleton<ICartRepository, CartRepository>();
+			Services.AddSingleton<ITokenService, TokenService>();
 
 			//Add AutoMapper
 			Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));

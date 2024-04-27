@@ -10,3 +10,9 @@ F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\refint\Talabat.Service.dll
 F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.pdb
 F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\ref\Talabat.Service.dll
 F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.sourcelink.json
+F:\C#\Talabat\Talabat.Service\bin\Debug\net6.0\Talabat.Core.dll
+F:\C#\Talabat\Talabat.Service\bin\Debug\net6.0\Talabat.Repository.dll
+F:\C#\Talabat\Talabat.Service\bin\Debug\net6.0\Talabat.Repository.pdb
+F:\C#\Talabat\Talabat.Service\bin\Debug\net6.0\Talabat.Core.pdb
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat.Service.csproj.AssemblyReference.cache
+F:\C#\Talabat\Talabat.Service\obj\Debug\net6.0\Talabat..89B18B2E.Up2Date
