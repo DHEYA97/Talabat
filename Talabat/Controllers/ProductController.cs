@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Talabat.APIs.Dtos;
 using Talabat.APIs.Errors;
+using Talabat.APIs.Filter;
 using Talabat.APIs.Hellper;
 using Talabat.Core.Models;
 using Talabat.Core.Repositories.Interfaces;
@@ -12,6 +13,7 @@ using Talabat.Core.Specification.EntitySpecification.product;
 
 namespace Talabat.APIs.Controllers
 {
+	[Jwt]
 	public class ProductController : BaseApiController
 	{
 		private readonly IGenericRepositories<Product> _ProductRepositories;

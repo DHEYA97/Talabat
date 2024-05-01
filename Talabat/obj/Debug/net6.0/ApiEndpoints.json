@@ -1,6 +1,72 @@
 [
   {
     "ContainingType": "Talabat.APIs.Controllers.AccountController",
+    "Method": "Addres",
+    "RelativePath": "api/Account/Address",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Talabat.APIs.Dtos.AddressDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Talabat.APIs.Controllers.AccountController",
+    "Method": "Address",
+    "RelativePath": "api/Account/Address",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Talabat.APIs.Dtos.AddressDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Talabat.APIs.Dtos.AddressDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Talabat.APIs.Controllers.AccountController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/Account/GetCurrentUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Talabat.APIs.Dtos.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Talabat.APIs.Controllers.AccountController",
     "Method": "SingIn",
     "RelativePath": "api/Account/SingIn",
     "HttpMethod": "POST",

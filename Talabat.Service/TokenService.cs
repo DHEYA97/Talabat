@@ -52,7 +52,7 @@ namespace Talabat.Service
 						claims: AuthCliam,
 						signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature)
 					);
-
+		
 			//Return Token
 			return new JwtSecurityTokenHandler().WriteToken(token);
 		}

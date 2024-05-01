@@ -45,6 +45,8 @@ namespace Talabat
 
 			// Add All Custom Service From Extention Method
 			builder.Services.AddCustomService(builder);
+			builder.Services.AddJwtService(builder);
+
 
 			var app = builder.Build();
 			
@@ -87,6 +89,7 @@ namespace Talabat
 			app.UseHttpsRedirection();
 			app.UseStaticFiles();
 
+			app.UseAuthentication();
 			app.UseAuthorization();
 
 
