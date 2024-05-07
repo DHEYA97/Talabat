@@ -12,16 +12,16 @@ namespace Talabat.Core.Models.Order
         {
             
         }
-        public Order(string bayerEmai, Address address, DeliveryMethod deliveryMethod, ICollection<OrderItem> items, decimal subTotal)
+        public Order(string bayerEmail, Address address, DeliveryMethod deliveryMethod, ICollection<OrderItem> items, decimal subTotal)
 		{
-			BayerEmai = bayerEmai;
+			BayerEmail = bayerEmail ;
 			Address = address;
 			DeliveryMethod = deliveryMethod;
 			Items = items;
 			SubTotal = subTotal;
 		}
 
-		public string BayerEmai {  get; set; }
+		public string BayerEmail {  get; set; }
 		public DateTimeOffset OrderDate {  get; set; } = DateTimeOffset.Now;
 		public OrderStatus Status { get; set; } = OrderStatus.Pending;
 		public Address Address { get; set; }

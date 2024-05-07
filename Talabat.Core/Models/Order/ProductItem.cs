@@ -12,7 +12,7 @@ namespace Talabat.Core.Models.Order
         {
             
         }
-        public ProductItem(int productId, int productName, int picturUrl)
+        public ProductItem(int productId, string productName, string picturUrl)
 		{
 			ProductId = productId;
 			ProductName = productName;
@@ -20,7 +20,7 @@ namespace Talabat.Core.Models.Order
 		}
 
 		public int ProductId { get; set; }
-		public int ProductName { get; set; }
-		public int PicturUrl { get; set; }
+		public string ProductName { get; set; }
+		public string PicturUrl { get; set; }
 	}
 }

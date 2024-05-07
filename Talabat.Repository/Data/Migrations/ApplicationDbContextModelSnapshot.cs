@@ -58,7 +58,7 @@ namespace Talabat.Repository.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("BayerEmai")
+                    b.Property<string>("BayerEmail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -241,14 +241,16 @@ namespace Talabat.Repository.Data.Migrations
                             b1.Property<int>("OrderItemId")
                                 .HasColumnType("int");
 
-                            b1.Property<int>("PicturUrl")
-                                .HasColumnType("int");
+                            b1.Property<string>("PicturUrl")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
 
                             b1.Property<int>("ProductId")
                                 .HasColumnType("int");
 
-                            b1.Property<int>("ProductName")
-                                .HasColumnType("int");
+                            b1.Property<string>("ProductName")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
 
                             b1.HasKey("OrderItemId");
 

@@ -5,8 +5,10 @@ using Talabat.APIs.Errors;
 using Talabat.APIs.Mapping;
 using Talabat.Core.Repositories.Interfaces;
 using Talabat.Core.Service.Interfaces;
+using Talabat.Core.UnitOfWork;
 using Talabat.Repository.Data;
 using Talabat.Repository.Repositories;
+using Talabat.Repository.UnitOfWork;
 using Talabat.Service;
 
 namespace Talabat.APIs.Extensions
@@ -18,7 +20,9 @@ namespace Talabat.APIs.Extensions
 			
 			//Add Repositories Injection
 			Services.AddScoped(typeof(IGenericRepositories<>), typeof(GenericRepositories<>));
-			Services.AddSingleton<ICartRepository, CartRepository>();
+			Services.AddScoped<IUnitOfWork,UnitOfWork>();
+			Services.AddScoped<ICartRepository, CartRepository>();
+			Services.AddScoped<IOrderService, OrderService>();
 			Services.AddSingleton<ITokenService, TokenService>();
 
 			//Add AutoMapper

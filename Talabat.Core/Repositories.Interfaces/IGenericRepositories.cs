@@ -16,5 +16,6 @@ namespace Talabat.Core.Repositories.Interfaces
 		Task<T?> GetByIdWithSpecificationAsync(ISpecification<T> specification);
 		Task<IEnumerable<T?>> GetAllWithSpecificationAsync(ISpecification<T> specification);
 		Task<int> GetCountAsync(ISpecification<T> specification);
+		Task AddAsync(T entity);
 	}
 }
